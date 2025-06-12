@@ -1,0 +1,328 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem - Rovaris di Lázaro</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #000100;
+            border-bottom: 1px solid #000100;
+            padding-bottom: 5px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #000100;
+            color: #fff;
+            text-align: center;
+        }
+        .dots {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        .filled-dot {
+            color: #000;
+        }
+        .empty-dot {
+            color: #ccc;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha de Personagem - Vampiro: A Máscara</h1>
+
+        <div class="section">
+            <h2>Informações do Personagem</h2>
+            <table>
+                <tr>
+                    <td><strong>Nome:</strong> Rovaris di Lázaro</td>
+                    <td><strong>Clã:</strong> Ventrue</td>
+                    <td><strong>Geração:</strong> 9ª</td>
+                </tr>
+                <tr>
+                    <td><strong>Natureza:</strong> Manipulador</td>
+                    <td><strong>Comportamento:</strong> Aristocrata</td>
+                    <td><strong>Crônica:</strong> Mystic Falls</td>
+                </tr>
+                <tr>
+                    <td><strong>Conceito:</strong> Mestre Diplomático</td>
+                    <td><strong>Seita:</strong> Camarilla</td>
+                    <td><strong>Jogador:</strong> [Seu Nome]</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Atributos</h2>
+            <table>
+                <tr>
+                    <th>Físicos</th>
+                    <th>Sociais</th>
+                    <th>Mentais</th>
+                </tr>
+                <tr>
+                    <td>
+                        Força: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Destreza: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Vigor: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
+                    </td>
+                    <td>
+                        Carisma: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Manipulação: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Aparência: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
+                    </td>
+                    <td>
+                        Percepção: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Inteligência: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Raciocínio: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <table>
+                <tr>
+                    <th>Talentos</th>
+                    <th>Perícias</th>
+                    <th>Conhecimentos</th>
+                </tr>
+                <tr>
+                    <td>
+                        Prontidão: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Atletismo: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span><br>
+                        Percepção: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Empatia: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Expressão: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Intimidação: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Liderança: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Subterfúgio: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span>
+                    </td>
+                    <td>
+                        Etiqueta: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Armas de Fogo: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span><br>
+                        Armas Brancas: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Performance: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Furtividade: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span><br>
+                        Sobrevivência: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span>
+                    </td>
+                    <td>
+                        Acadêmicos: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Finanças: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Direito: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Ocultismo: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
+                        Política: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Tecnologia: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Disciplinas</h2>
+            <table>
+                <tr>
+                    <td>Dominação: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span></td>
+                    <td>Fortitude: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span></td>
+                    <td>Presença: <span class="dots"><span class="filled-dot">●</span><span class="empty-dot">○○○○</span></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Antecedentes</h2>
+            <table>
+                <tr>
+                    <td>
+                        Aliados: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
+                        Contatos: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Rebanho: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
+                    </td>
+                    <td>
+                        Influência: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Recursos: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
+                        Lacaios: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span>
+                    </td>
+                    <td>
+                        Status: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Virtudes</h2>
+            <table>
+                <tr>
+                    <td>Consciência: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span></td>
+                    <td>Autocontrole: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span></td>
+                    <td>Coragem: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Outros Atributos</h2>
+            <table>
+                <tr>
+                    <td>Humanidade: <span class="dots"><span class="filled-dot">●●●●●</span><span class="empty-dot">○○○○○</span></span></td>
+                    <td>Força de Vontade: <span class="dots"><span class="filled-dot">●●●●●●●</span><span class="empty-dot">○○○</span></span></td>
+                    <td>Reserva de Sangue: 14</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Méritos e Defeitos</h2>
+            <p><strong>Méritos:</strong></p>
+            <ul>
+                <li>Digestão Eficiente (1 pt)</li>
+                <li>Vontade de Ferro (3 pts)</li>
+            </ul>
+            <p><strong>Defeitos:</strong></p>
+            <ul>
+                <li>Segredo Sombrio (1 pt)</li>
+                <li>Exclusão de Presa (1 pt)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Saúde</h2>
+            <table>
+                <tr><td>Machucado</td><td>□</td></tr>
+                <tr><td>Ferido (-1)</td><td>□</td></tr>
+                <tr><td>Lesionado (-1)</td><td>□</td></tr>
+                <tr><td>Ferido (-2)</td><td>□</td></tr>
+                <tr><td>Mutilado (-2)</td><td>□</td></tr>
+                <tr><td>Incapacitado (-5)</td><td>□</td></tr>
+                <tr><td>Aleijado</td><td>□</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Equipamento</h2>
+            <ul>
+                <li>Ternos sob medida</li>
+                <li>Anel com brasão da família</li>
+                <li>Smartphone criptografado</li>
+                <li>Adaga cerimonial</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Descrição</h2>
+            <p>Rovaris di Lázaro é uma figura alta e imponente, com barba bem aparada, olhos frios e penetrantes, e sempre trajando um terno impecável. Seu comportamento aristocrático e fala calculada impõem respeito. Reside em uma mansão fortificada em Mystic Falls, mantida por um rebanho de servas góticas que cuidam da casa e servem como fonte de sangue. Seu anel com brasão e luvas de couro são marcas de sua herança e controle.</p>
+        </div>
+
+        <div class="section">
+            <h2>Histórico</h2>
+            <p>Diplomata no Império Austro-Húngaro, Rovaris sobreviveu à sua queda manipulando tratados e famílias nobres. Negociou tréguas entre clãs vampíricos na Europa Oriental, ganhando reputação como estrategista. Em Mystic Falls, lidera a Camarilla Oculta, controlando a política local e mantendo equilíbrio com outras facções. Sua mansão é um centro de intrigas, onde promove encontros para reforçar sua dominância.</p>
+        </div>
+
+        <div class="section">
+            <h2>Drama</h2>
+            <p>Rovaris manipula secretamente seu neto mortal, um líder político em ascensão. Ele debate entre transformá-lo em vampiro para criar uma dinastia eterna ou protegê-lo da maldição de Caim. Esse conflito testa sua Humanidade, pois cada decisão arrisca expor suas maquinações ou desmoronar seu império.</p>
+        </div>
+
+        <div class="section">
+            <h2>Notas</h2>
+            <ul>
+                <li><strong>Restrição de Alimentação:</strong> Alimenta-se apenas de seu rebanho, treinado para lealdade e estética gótica.</li>
+                <li><strong>Mansão:</strong> Fortificada, com câmaras ocultas, proteções arcanas e um cofre de sangue. Serve como ponto neutro para reuniões da Camarilla.</li>
+                <li><strong>Rede Política:</strong> Influencia a prefeitura, polícia local e anciões regionais da Camarilla, sendo uma figura central em Mystic Falls.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
