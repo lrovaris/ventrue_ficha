@@ -43,334 +43,523 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha de Personagem - Rovaris di Lázaro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
             background-color: #fff;
-            margin: 0;
-            padding: 20px;
             color: #000;
             font-size: 120%; /* 20% larger font size */
         }
         .container {
-            max-width: 95%; /* Larger viewport width */
-            margin: 0 auto;
+            max-width: 1280px; /* Fixed max width */
+            margin-top: 20px;
             border: 2px solid #000;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        h1 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #000;
-            padding-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
+        .card-header {
+            background-color: #ccc;
             border-bottom: 1px solid #000;
-            padding-bottom: 5px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-            border: 1px solid #000;
-        }
-        th, td {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
+        .custom-table th {
             background-color: #ccc;
             text-align: center;
             font-weight: bold;
+            font-size: 1.5em; /* Larger font for titles */
         }
-        .dots {
-            letter-spacing: 2px;
+        .form-check-input:checked {
+            background-color: #cc0000; /* Red for Blood */
+            border-color: #cc0000;
         }
-        .filled-dot {
-            color: #000;
+        .form-check-willpower .form-check-input:checked {
+            background-color: #666666; /* Gray for Willpower */
+            border-color: #666666;
         }
-        .empty-dot {
-            color: #ccc;
+        .form-check-vitality .form-check-input:checked {
+            background-color: #006600; /* Green for Vitality */
+            border-color: #006600;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
+        .form-check-humanity .form-check-input:checked {
+            background-color: #cccc00; /* Yellow for Humanity */
+            border-color: #cccc00;
         }
-        li {
-            margin-bottom: 5px;
+        .form-check-input:focus {
+            outline: none !important;
+            box-shadow: none !important;
         }
-        p {
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .health-box, .willpower-box, .blood-pool-box {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 1px solid #000;
-            text-align: center;
-            margin: 2px;
-            vertical-align: middle;
+        .count {
+            font-weight: bold;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>VAMPIRO A MÁSCARA</h1>
+        <h1 class="display-4 text-center">VAMPIRO A MÁSCARA</h1>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <td><strong>Nome:</strong> Rovaris di Lázaro</td>
-                    <td><strong>Natureza:</strong> Manipulador</td>
-                    <td><strong>Geração:</strong> 10ª</td>
-                </tr>
-                <tr>
-                    <td><strong>Jogador:</strong> Luis Rovaris</td>
-                    <td><strong>Comportamento:</strong> Aristocrata</td>
-                    <td><strong>Refúgio:</strong> Mansão Fortificada</td>
-                </tr>
-                <tr>
-                    <td><strong>Crônica:</strong> Mystic Falls</td>
-                    <td><strong>Clã:</strong> Ventrue</td>
-                    <td><strong>Conceito:</strong> Ventríloquo Mediador</td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Informações do Personagem</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4"><strong>Nome:</strong> Rovaris di Lázaro</div>
+                    <div class="col-4"><strong>Natureza:</strong> Manipulador</div>
+                    <div class="col-4"><strong>Geração:</strong> 10ª</div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-4"><strong>Jogador:</strong> Luis Rovaris</div>
+                    <div class="col-4"><strong>Comportamento:</strong> Aristocrata</div>
+                    <div class="col-4"><strong>Refúgio:</strong> Mansão Fortificada</div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-4"><strong>Crônica:</strong> Mystic Falls</div>
+                    <div class="col-4"><strong>Clã:</strong> Ventrue</div>
+                    <div class="col-4"><strong>Conceito:</strong> Ventríloquo Mediador</div>
+                </div>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Físicos</th>
-                    <th>Sociais</th>
-                    <th>Mentais</th>
-                </tr>
-                <tr>
-                    <td>
-                        Força: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
-                        Destreza: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
-                        Vigor: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span>
-                    </td>
-                    <td>
-                        Carisma: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Manipulação: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Aparência: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span>
-                    </td>
-                    <td>
-                        Percepção: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Inteligência: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Raciocínio: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
-                    </td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Atributos</div>
+            <div class="card-body">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Físicos</th>
+                        <th>Sociais</th>
+                        <th>Mentais</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Força: ●●○○○<br>
+                            Destreza: ●●○○○<br>
+                            Vigor: ●●○○○
+                        </td>
+                        <td>
+                            Carisma: ●●●○○<br>
+                            Manipulação: ●●●●○<br>
+                            Aparência: ●●○○○
+                        </td>
+                        <td>
+                            Percepção: ●●●○○<br>
+                            Inteligência: ●●●●○<br>
+                            Raciocínio: ●●●○○
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Talentos</th>
-                    <th>Perícias</th>
-                    <th>Conhecimentos</th>
-                </tr>
-                <tr>
-                    <td>
-                        Prontidão: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
-                        Esquiva: <span class="dots"><span class="filled-dot">●○○○○</span></span><br>
-                        Empatia: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
-                        Expressão: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Intimidação: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Liderança: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Subterfúgio: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span>
-                    </td>
-                    <td>
-                        Etiqueta: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Armas Brancas: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
-                        Performance: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Furtividade: <span class="dots"><span class="filled-dot">●○○○○</span></span><br>
-                        Sobrevivência: <span class="dots"><span class="filled-dot">●○○○○</span></span>
-                    </td>
-                    <td>
-                        Acadêmicos: <span class="dots"><span class="filled-dot">●●●●●</span><span class="empty-dot">○</span></span><br>
-                        Finanças: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Investigação: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Ocultismo: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Política: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Tecnologia: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span>
-                    </td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Habilidades</div>
+            <div class="card-body">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Talentos</th>
+                        <th>Perícias</th>
+                        <th>Conhecimentos</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Prontidão: ●●○○○<br>
+                            Esquiva: ●○○○○<br>
+                            Empatia: ●●○○○<br>
+                            Expressão: ●●●○○<br>
+                            Intimidação: ●●●○○<br>
+                            Liderança: ●●●●○<br>
+                            Subterfúgio: ●●●●○
+                        </td>
+                        <td>
+                            Etiqueta: ●●●●○<br>
+                            Armas Brancas: ●●○○○<br>
+                            Performance: ●●●○○<br>
+                            Furtividade: ●○○○○<br>
+                            Sobrevivência: ●○○○○
+                        </td>
+                        <td>
+                            Acadêmicos: ●●●●●○<br>
+                            Finanças: ●●●○○<br>
+                            Investigação: ●●●○○<br>
+                            Ocultismo: ●●●○○<br>
+                            Política: ●●●●○<br>
+                            Tecnologia: ●●●●○
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Disciplinas</th>
-                    <th>Virtudes</th>
-                </tr>
-                <tr>
-                    <td>
-                        Dominação: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Presença: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span>
-                    </td>
-                    <td>
-                        Consciência: <span class="dots"><span class="filled-dot">●●</span><span class="empty-dot">○○○</span></span><br>
-                        Autocontrole: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Coragem: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span>
-                    </td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Disciplinas e Virtudes</div>
+            <div class="card-body">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Disciplinas</th>
+                        <th>Virtudes</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dominação: ●●●○○<br>
+                            Presença: ●●○○○
+                        </td>
+                        <td>
+                            Consciência: ●●○○○<br>
+                            Autocontrole: ●●●●○<br>
+                            Coragem: ●●●○○
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Antecedentes</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>
-                        Contatos: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Rebanho: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Recursos: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span><br>
-                        Status: <span class="dots"><span class="filled-dot">●●●</span><span class="empty-dot">○○</span></span><br>
-                        Influência: <span class="dots"><span class="filled-dot">●●●●</span><span class="empty-dot">○</span></span>
-                    </td>
-                    <td></td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Antecedentes</div>
+            <div class="card-body">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Antecedentes</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Contatos: ●●●●○<br>
+                            Rebanho: ●●●○○<br>
+                            Recursos: ●●●●○<br>
+                            Status: ●●●○○<br>
+                            Influência: ●●●●○
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Humanidade</th>
-                    <th>Força de Vontade</th>
-                    <th>Pontos de Sangue</th>
-                </tr>
-                <tr>
-                    <td><span class="dots"><span class="filled-dot">●●●●●</span><span class="empty-dot">○○○○○</span></span></td>
-                    <td>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">●</span>
-                        <span class="willpower-box">○</span>
-                        <span class="willpower-box">○</span>
-                        <span class="willpower-box">○</span>
-                    </td>
-                    <td>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                        <span class="blood-pool-box">□</span>
-                    </td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Humanidade, Força de Vontade e Pontos de Sangue</div>
+            <div class="card-body" id="bloodTable">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Humanidade</th>
+                        <th>Força de Vontade</th>
+                        <th>Pontos de Sangue</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity1" checked>
+                                <label class="form-check-label" for="humanity1"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity2" checked>
+                                <label class="form-check-label" for="humanity2"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity3" checked>
+                                <label class="form-check-label" for="humanity3"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity4" checked>
+                                <label class="form-check-label" for="humanity4"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity5" checked>
+                                <label class="form-check-label" for="humanity5"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity6">
+                                <label class="form-check-label" for="humanity6"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity7">
+                                <label class="form-check-label" for="humanity7"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity8">
+                                <label class="form-check-label" for="humanity8"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity9">
+                                <label class="form-check-label" for="humanity9"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-humanity">
+                                <input class="form-check-input" type="checkbox" id="humanity10">
+                                <label class="form-check-label" for="humanity10"></label>
+                            </div>
+                            <span class="count" id="humanityCount">5</span>
+                        </td>
+                        <td id="willpowerTable">
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower1" checked>
+                                <label class="form-check-label" for="willpower1"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower2" checked>
+                                <label class="form-check-label" for="willpower2"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower3" checked>
+                                <label class="form-check-label" for="willpower3"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower4" checked>
+                                <label class="form-check-label" for="willpower4"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower5" checked>
+                                <label class="form-check-label" for="willpower5"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower6" checked>
+                                <label class="form-check-label" for="willpower6"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower7" checked>
+                                <label class="form-check-label" for="willpower7"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower8">
+                                <label class="form-check-label" for="willpower8"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower9">
+                                <label class="form-check-label" for="willpower9"></label>
+                            </div>
+                            <div class="form-check form-check-inline form-check-willpower">
+                                <input class="form-check-input" type="checkbox" id="willpower10">
+                                <label class="form-check-label" for="willpower10"></label>
+                            </div>
+                            <span class="count" id="willpowerCount">7</span>
+                        </td>
+                        <td id="bloodTable">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood1" checked>
+                                <label class="form-check-label" for="blood1"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood2" checked>
+                                <label class="form-check-label" for="blood2"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood3" checked>
+                                <label class="form-check-label" for="blood3"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood4" checked>
+                                <label class="form-check-label" for="blood4"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood5" checked>
+                                <label class="form-check-label" for="blood5"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood6" checked>
+                                <label class="form-check-label" for="blood6"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood7" checked>
+                                <label class="form-check-label" for="blood7"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood8" checked>
+                                <label class="form-check-label" for="blood8"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood9" checked>
+                                <label class="form-check-label" for="blood9"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood10" checked>
+                                <label class="form-check-label" for="blood10"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood11" checked>
+                                <label class="form-check-label" for="blood11"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood12" checked>
+                                <label class="form-check-label" for="blood12"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="blood13" checked>
+                                <label class="form-check-label" for="blood13"></label>
+                            </div>
+                            <span class="count" id="bloodCount">13</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Qualidades/Defeitos</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Elegância Natural (2 pts)</li>
-                            <li>Contatos na Tecnologia (3 pts)</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Segredo Sombrio (1 pt)</li>
-                            <li>Dependência de Acordos (2 pts)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Vitalidade</div>
+            <div class="card-body" id="vitalityTable">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Vitalidade</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality1" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality1">Machucado</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality2" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality2">Escoriado</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality3" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality3">Machucado (-1)</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality4" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality4">Ferido (-1)</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality5" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality5">Ferido (-2)</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality6" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality6">Ferido Gravemente (-2)</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality7" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality7">Espancado (-2)</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality8" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality8">Aleijado (-5)</label>
+                            </div>
+                            <div class="form-check form-check-vitality">
+                                <input class="form-check-input" type="checkbox" id="vitality9" name="vitalityGroup">
+                                <label class="form-check-label" for="vitality9">Incapacitado</label>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <table>
-                <tr>
-                    <th>Vitalidade</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Machucado: □</li>
-                            <li>Escoriado: □</li>
-                            <li>Machucado (-1): □</li>
-                            <li>Ferido (-1): □</li>
-                            <li>Ferido (-2): □</li>
-                            <li>Ferido Gravemente (-2): □</li>
-                            <li>Espancado (-2): □</li>
-                            <li>Aleijado (-5): □</li>
-                            <li>Incapacitado: □</li>
-                        </ul>
-                    </td>
-                    <td></td>
-                </tr>
-            </table>
+        <div class="card mb-4">
+            <div class="card-header">Qualidades/Defeitos</div>
+            <div class="card-body">
+                <table class="table table-bordered custom-table">
+                    <tr>
+                        <th>Qualidades</th>
+                        <th>Defeitos</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Elegância Natural (2 pts)</li>
+                                <li>Contatos na Tecnologia (3 pts)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Segredo Sombrio (1 pt)</li>
+                                <li>Dependência de Acordos (2 pts)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Equipamento</h2>
-            <ul>
-                <li>Ternos e gravatas pretas</li>
-                <li>Cópia do "Anjo Caído" na parede do escritório</li>
-                <li>Smartphone criptografado com monitoramento avançado</li>
-            </ul>
+        <div class="card mb-4">
+            <div class="card-header">Equipamento</div>
+            <div class="card-body">
+                <ul>
+                    <li>Ternos e gravatas pretas</li>
+                    <li>Cópia do "Anjo Caído" na parede do escritório</li>
+                    <li>Smartphone criptografado com monitoramento avançado</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Descrição</h2>
-            <p>Rovaris di Lázaro é uma figura enigmática e imponente, um ventriloquista que opera nas sombras do submundo sem jamais revelar seu rosto ao público. Sempre vestido com ternos e gravatas pretas impecavelmente cortados, ele exsuda uma aura de sofisticação e controle, refletida em sua mansão fortificada, onde uma cópia do "Anjo Caído" adorna a parede de seu escritório, um testemunho de seu amor pela arte clássica. Seus olhos penetrantes observam tudo, e sua voz, modulada por anos de prática como ventriloquista, carrega um tom hipnótico que desarma adversários. Seu rebanho é composto por um seleto grupo de mulheres entre 18 e 25 anos, vestidas com elegância gótica que combina com seu mestre: saias longas de veludo, corsets intricados e joias discretas, todas treinadas para atender suas ordens com devoção silenciosa. Como protetor da Máscara, Rovaris serve como mediador entre humanos e vampiros conhecedores, usando sua habilidade de manipulação para manter o equilíbrio em Mystic Falls, sempre leal à Camarilla.</p>
+        <div class="card mb-4">
+            <div class="card-header">Descrição</div>
+            <div class="card-body">
+                <p>Rovaris di Lázaro é uma figura enigmática e imponente, um ventriloquista que opera nas sombras do submundo sem jamais revelar seu rosto ao público. Sempre vestido com ternos e gravatas pretas impecavelmente cortados, ele exsuda uma aura de sofisticação e controle, refletida em sua mansão fortificada, onde uma cópia do "Anjo Caído" adorna a parede de seu escritório, um testemunho de seu amor pela arte clássica. Seus olhos penetrantes observam tudo, e sua voz, modulada por anos de prática como ventriloquista, carrega um tom hipnótico que desarma adversários. Seu rebanho é composto por um seleto grupo de mulheres entre 18 e 25 anos, vestidas com elegância gótica que combina com seu mestre: saias longas de veludo negro, corsets intricados de couro trabalhado e joias discretas de prata, todas treinadas para atender suas ordens com devoção silenciosa e precisão. Como protetor da Máscara, Rovaris serve como mediador entre humanos e vampiros conhecedores, usando sua habilidade de manipulação para manter o equilíbrio em Mystic Falls, sempre leal à Camarilla. Sua presença é marcada por um silêncio calculado, interrompido apenas pelo eco de sua voz projetada, um truque que usa para confundir e controlar.</p>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Histórico</h2>
-            <p>Rovaris di Lázaro nasceu em uma família de acadêmicos italianos no século XVIII, em Veneza, onde desenvolveu uma paixão precoce por filosofia, arte e retórica. Sua inteligência excepcional o levou a estudar nas melhores universidades europeias, mas sua vida mudou quando, em 1789, foi abraçado por um ancião Ventrue durante a Revolução Francesa, atraído por sua capacidade de persuadir multidões. Inicialmente um erudito recluso, Rovaris aperfeiçoou a arte do ventriloquismo como uma ferramenta de influência, usando-a para manipular negociações secretas entre clãs rivais na Europa. Sua habilidade em resolver conflitos sem derramamento de sangue chamou a atenção da Camarilla, que o recrutou como mediador.
+        <div class="card mb-4">
+            <div class="card-header">Histórico</div>
+            <div class="card-body">
+                <p>Rovaris di Lázaro nasceu em 1750, em Veneza, Itália, filho de uma família de acadêmicos renomados que valorizavam o conhecimento e a arte. Desde jovem, destacou-se por sua mente aguçada e talento para a retórica, frequentando as universidades de Pádua e Bolonha, onde se especializou em filosofia e história da arte. Em 1789, durante a Revolução Francesa, seu destino mudou quando foi abordado por um ancião Ventrue, Marco di Verrocchio, impressionado por sua capacidade de persuadir uma multidão enfurecida a recuar sem violência. Abraçado como um peão, Rovaris inicialmente resistiu, mas logo abraçou sua nova existência, usando sua inteligência para ascender na hierarquia da Camarilla.
 
-Após séculos de serviço, ele se estabeleceu em Mystic Falls no início do século XX, atraído pelas linhas ley que amplificavam seu poder de Dominação. Usando seu conhecimento acadêmico, ele investiu em tecnologia emergente, fundando empresas de segurança e monitoramento que hoje dominam o mercado local. Seus contatos na política e na tecnologia foram cultivados através de décadas de acordos discretos, como subornos a oficiais corruptos e parcerias com CEOs ambiciosos, transformando-o em uma figura influente. A mansão fortificada, equipada com sistemas de segurança de última geração, reflete sua riqueza e paranoia, adquirida após escapar de uma emboscada de caçadores em 1965. O "Anjo Caído" foi um presente de um aliado Toreador, simbolizando sua ascensão de mortal humilde a mestre do submundo. Seus recursos e status foram construídos sobre essa rede de alianças e segredos, que ele protege com unhas e dentes.</p>
+Nos séculos seguintes, ele refinou sua arte do ventriloquismo, transformando-a em uma arma de influência subliminar durante negociações secretas na Europa. Em 1820, mediou um tratado entre o clã Nosferatu e a Camarilla em Paris, ganhando contatos valiosos entre os anciões vampíricos. Sua reputação cresceu ao evitar guerras entre clãs na Itália e na Alemanha, sempre com acordos elegantes que preservavam a Máscara. Em 1905, chegou a Mystic Falls, atraído pelas linhas ley que amplificavam suas Disciplinas, e investiu em tecnologia emergente, fundando a "Securis Tech", uma empresa de segurança que hoje domina o mercado de monitoramento. Seus contatos na política foram forjados ao subornar um prefeito local em 1930, enquanto seus laços tecnológicos vieram de parcerias com engenheiros durante a Guerra Fria, garantindo contratos governamentais. A mansão fortificada, adquirida em 1960 após escapar de caçadores em Praga, foi equipada com sistemas de ponta, refletindo seu conhecimento em tecnologia. O "Anjo Caído" foi um presente de um aliado Toreador em 1850, simbolizando sua transição de mortal humilde a mestre do submundo. Sua influência e recursos são frutos de décadas de manipulação discreta e alianças estratégicas, mantidas sob o véu da Máscara.</p>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Drama</h2>
-            <p>Rovaris acredita firmemente que qualquer conflito pode ser resolvido com um acordo bem negociado, uma filosofia que o tornou indispensável à Camarilla, mas também uma fraqueza. Sua dependência de diplomacia o deixa vulnerável quando enfrenta adversários que rejeitam negociações, forçando-o a recorrer à Dominação, o que erode sua Humanidade. Seu segredo sombrio — o fato de ter manipulado um senador humano para aprovar leis favoráveis aos vampiros, sem o conhecimento da Camarilla — ameaça expô-lo se descoberto, especialmente por rivais que cobiçam seu poder. Ele pondera entre revelar sua influência para consolidar sua posição ou manter o disfarce, arriscando tudo para proteger sua máscara de perfeição.</p>
+        <div class="card mb-4">
+            <div class="card-header">Drama</div>
+            <div class="card-body">
+                <p>Rovaris acredita firmemente que qualquer conflito pode ser resolvido com um acordo bem negociado, uma filosofia que o tornou indispensável à Camarilla, mas também uma fraqueza. Sua dependência de diplomacia o deixa vulnerável quando enfrenta adversários que rejeitam negociações, forçando-o a recorrer à Dominação, o que erode sua Humanidade. Seu segredo sombrio — o fato de ter manipulado um senador humano em 1995 para aprovar leis que facilitaram a expansão de suas empresas, sem o conhecimento da Camarilla — ameaça expô-lo se descoberto, especialmente por rivais que cobiçam seu poder. Ele pondera entre revelar sua influência para consolidar sua posição ou manter o disfarce, arriscando tudo para proteger sua máscara de perfeição, enquanto lida com a pressão de caçadores que suspeitam de sua atividade.</p>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Notas</h2>
-            <ul>
-                <li><strong>Rebanho:</strong> Mulheres jovens e elegantes que atendem suas ordens com devoção, selecionadas por sua discrição e aparência refinada.</li>
-                <li><strong>Mansão:</strong> Equipada com câmeras de segurança, sensores de movimento e um bunker secreto, resultado de sua expertise tecnológica.</li>
-                <li><strong>Empresas:</strong> Controla firmas de tecnologia focadas em monitoramento e cibersegurança, gerando sua fortuna e influência.</li>
-            </ul>
+        <div class="card mb-4">
+            <div class="card-header">Notas</div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Rebanho:</strong> Mulheres jovens e elegantes que atendem suas ordens com devoção, selecionadas por sua discrição e aparência refinada, vivendo em sua mansão.</li>
+                    <li><strong>Mansão:</strong> Equipada com câmeras de segurança, sensores de movimento e um bunker secreto, resultado de sua expertise tecnológica e paranoia.</li>
+                    <li><strong>Empresas:</strong> Controla a "Securis Tech", líder em monitoramento e cibersegurança, gerando sua fortuna e influência política.</li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initial state
+        let bloodCount = 13;
+        let willpowerCount = 7;
+        let humanityCount = 5;
+        let vitalityCount = 0;
+
+        // Toggle Blood Pool
+        document.querySelectorAll('#bloodTable input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                bloodCount = document.querySelectorAll('#bloodTable input[type="checkbox"]:checked').length;
+                document.getElementById('bloodCount').textContent = bloodCount;
+            });
+        });
+
+        // Toggle Willpower
+        document.querySelectorAll('#willpowerTable input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                willpowerCount = document.querySelectorAll('#willpowerTable input[type="checkbox"]:checked').length;
+                document.getElementById('willpowerCount').textContent = willpowerCount;
+            });
+        });
+
+        // Toggle Humanity
+        document.querySelectorAll('#bloodTable input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                humanityCount = document.querySelectorAll('#bloodTable input[type="checkbox"]:checked').length;
+                document.getElementById('humanityCount').textContent = humanityCount;
+            });
+        });
+
+        // Toggle Vitality (single selection)
+        document.querySelectorAll('#vitalityTable input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    document.querySelectorAll('#vitalityTable input[type="checkbox"]').forEach(other => {
+                        if (other !== this) other.checked = false;
+                    });
+                }
+                vitalityCount = document.querySelectorAll('#vitalityTable input[type="checkbox"]:checked').length;
+                // No counter display for Vitality as requested
+            });
+        });
+
+        // Set initial checked state (handled by HTML attributes)
+    </script>
 </body>
 </html>
