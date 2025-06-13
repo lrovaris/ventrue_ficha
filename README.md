@@ -1,4 +1,4 @@
-# Rovaris di Lázaro - Vampiro: A Máscara Character Profile
+# Rovaris di Lázaro - Perfil de Personagem para Vampiro: A Máscara
 
 ## Ficha de Personagem: Rovaris di Lázaro
 
@@ -109,38 +109,38 @@ A guerra em Chicago é uma oportunidade e um risco para Rovaris. Como mediador, 
   - **Risco**: Caçadores podem rastrear atividades da empresa até ele.  
 
 - **Passo 2: Despistar Investigações**  
-  To avoid hunters or rivals discovering the theft of the *Anjo Caído* or his dark secret, Rovaris must spread misinformation, such as rumors that the painting is in another country.  
-  - **Ação**: Use his lookalike to appear at public events, creating the illusion that he is traveling.  
-  - **Risco**: A mistake could expose his lookalike, revealing her existence.  
+  Para evitar que caçadores ou rivais descubram o roubo do *Anjo Caído* ou seu segredo sombrio, Rovaris deve espalhar desinformação, como rumores de que a pintura está em outro país.  
+  - **Ação**: Usar sua sósia para aparecer em eventos públicos, criando a ilusão de que ele está viajando.  
+  - **Risco**: Um erro pode expor sua sósia, revelando sua existência.  
 
 - **Passo 3: Manter o Rebanho Leal**  
-  The herd is essential for his sustenance and security. Rovaris must reinforce their devotion with gothic rituals and rewards, such as jewelry or privileges.  
-  - **Ação**: Organize private ceremonies in the mansion, using Presence to strengthen bonds.  
-  - **Risco**: A member of the herd could betray him if influenced by enemies.  
+  O rebanho é essencial para sua alimentação e segurança. Rovaris deve reforçar sua devoção com rituais góticos e recompensas, como joias ou privilégios.  
+  - **Ação**: Organizar cerimônias privadas na mansão, usando Presença para fortalecer laços.  
+  - **Risco**: Uma integrante do rebanho pode traí-lo se cair sob influência de inimigos.  
 
 ---
 
 ## Integração com a História e Sugestões Narrativas
 
 ### Contexto em Chicago, 2010
-The war in Chicago places Rovaris in a precarious position but also offers opportunities to advance his goals. The trap in the sewers, where he and the group were surrounded by Sabbat Brujahs, reveals the brutality of the conflict and the need for powerful allies. The rescue by the “Pacifier Denominator” (a mysterious local leader, possibly an ally or manipulator) puts Rovaris in debt, which he detests but also sees as a chance to form strategic alliances.  
+A guerra em Chicago coloca Rovaris em uma posição precária, mas também oferece oportunidades para avançar seus objetivos. A armadilha nos esgotos, onde ele e o grupo foram cercados por Brujahs do Sabá, revela a brutalidade do conflito e a necessidade de aliados poderosos. O resgate pelo “Pacificador Denominador” (um misterioso líder local, possivelmente um aliado ou manipulador) cria uma dívida que Rovaris detesta, mas também lhe dá uma chance de formar alianças estratégicas.
 
 ### Interação com Klaus Mikaelson
-Rovaris sees Klaus as an unpredictable threat but also a potential ally against the Sabbat. He may attempt to negotiate with Klaus, offering information about Camarilla movements in exchange for support in local conflicts. However, Klaus’s chaotic nature requires caution, and Rovaris will likely use his lookalike to keep his distance.  
-- **Suggested Scene**: Rovaris invites Klaus to a meeting in a neutral location (an abandoned warehouse), using ventriloquism to project his voice and confuse the hybrid. He proposes a temporary truce to face the Sabbat but keeps Domination ready in case Klaus becomes hostile.  
+Rovaris vê Klaus como uma ameaça imprevisível, mas também um potencial aliado contra o Sabá. Ele pode tentar negociar com Klaus, oferecendo informações sobre movimentos da Camarilla em troca de apoio em conflitos locais. No entanto, a natureza caótica de Klaus exige cautela, e Rovaris provavelmente usará sua sósia para manter distância.  
+- **Cena Sugerida**: Rovaris convida Klaus para uma reunião em um local neutro (um armazém abandonado), usando ventriloquismo para projetar sua voz e confundir o híbrido. Ele propõe uma trégua temporária para enfrentar o Sabá, mas mantém Dominação pronta caso Klaus se torne hostil.
 
 ### Sugestões para o Mestre
-1. **Internal Conflict**: Introduce a Camarilla rival who suspects Rovaris’s dark secret (the senator manipulation). This rival could try to expose him during a conclave, forcing him to choose between using Domination (and losing Humanity) or finding another way out.  
-2. **Hunters**: A group of hunters tracks *Securis Tech* activities to Rovaris’s mansion, planning to invade it to recover the *Anjo Caído*. The group must help Rovaris protect his haven without exposing the Masquerade.  
-3. **Mages**: A mage from the Order of Hermes contacts Rovaris, offering a mystical artifact in exchange for protection against the Sabbat. This could be a trap or an opportunity to start the treaty.  
-4. **Lookalike in Danger**: Rovaris’s lookalike is captured by Anarchs, who mistake her for him. The group must rescue her before her existence is revealed, while Rovaris deals with the paranoia of being exposed.  
+1. **Conflito Interno**: Introduza um rival na Camarilla que suspeita do segredo sombrio de Rovaris (a manipulação do senador). Esse rival pode tentar expor Rovaris durante um conclave, forçando-o a escolher entre usar Dominação (e perder Humanidade) ou encontrar outra saída.  
+2. **Caçadores**: Um grupo de caçadores rastreia atividades da *Securis Tech* até a mansão de Rovaris, planejando invadi-la para recuperar o *Anjo Caído*. O grupo deve ajudar Rovaris a proteger seu refúgio sem expor a Máscara.  
+3. **Magos**: Um mago da Ordem de Hermes contata Rovaris, oferecendo um artefato místico em troca de proteção contra o Sabá. Isso pode ser uma armadilha ou uma oportunidade para iniciar o tratado.  
+4. **Sósia em Perigo**: A sósia de Rovaris é capturada por Anarquistas, que a confundem com ele. O grupo deve resgatá-la antes que sua existência seja revelada, enquanto Rovaris lida com a paranoia de ser exposto.  
 
 ### Ganchos Narrativos
-- The Pacifier Denominator demands that Rovaris hand over the *Anjo Caído* as payment for the rescue. How does he react?  
-- A member of the herd begins to question her devotion, influenced by an Anarch vampire. This could lead to internal betrayal.  
-- A Camarilla elder discovers Rovaris is negotiating with mages and accuses him of violating the Traditions, initiating an investigation.  
+- O Pacificador Denominador exige que Rovaris entregue o *Anjo Caído* como pagamento pelo resgate. Como ele reage?  
+- Uma integrante do rebanho começa a questionar sua devoção, influenciada por um vampiro Anarquista. Isso pode levar a uma traição interna.  
+- Um ancião da Camarilla descobre que Rovaris está negociando com magos e o acusa de violar as Tradições, iniciando uma investigação.  
 
 ---
 
 ## Considerações Finais
-Rovaris di Lázaro is a complex character whose sophistication, paranoia, and ambition make him perfect for the chaotic setting of Chicago in 2010. His background as a ventriloquist, diplomat, and shadow master creates opportunities for scenes of manipulation, intrigue, and tension. The objective plan provides a clear path to achieve his goals, while internal conflicts and risks ensure narrative challenges. For the Storyteller, Rovaris can be both an ally and a source of complications, depending on how the group interacts with his ambitions.
+Rovaris di Lázaro é um personagem complexo, cuja sofisticação, paranoia e ambição o tornam perfeito para o cenário caótico de Chicago em 2010. Seu background como ventriloquista, diplomata e mestre das sombras cria oportunidades para cenas de manipulação, intriga e tensão. O plano objetivo oferece um caminho claro para alcançar seus objetivos, enquanto os riscos e conflitos internos garantem desafios narrativos. Para o mestre, Rovaris pode ser tanto um aliado quanto uma fonte de complicações, dependendo de como o grupo interage com suas ambições.
