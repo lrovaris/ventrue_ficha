@@ -1,6 +1,4 @@
-# Rovaris di Lázaro - Perfil de Personagem para Vampiro: A Máscara
-
-## Ficha de Personagem: Rovaris di Lázaro
+# Ficha de Personagem: Rovaris di Lázaro
 
 **Nome**: Rovaris di Lázaro  
 **Clã**: Ventrue  
@@ -14,30 +12,30 @@
 **Descrição Física**: Alto, magro, com cabelos negros penteados para trás, olhos cinzentos penetrantes (sua sósia tem olhos verdes), sempre trajando ternos pretos elegantes, mas menos luxuosos. Sua voz hipnótica, modulada pelo ventriloquismo, é sua principal arma.  
 **Fraqueza de Clã**: Só pode se alimentar de mulheres jovens (18-25 anos) com uma estética gótica refinada, o que o levou a formar um pequeno rebanho.  
 
-### Atributos (baseado em Vampiro: A Máscara, 5ª Edição, para um personagem inicial)
+## Atributos
 - **Físicos**: Força 2, Destreza 2, Vigor 2  
 - **Sociais**: Carisma 3, Manipulação 4, Compostura 3  
 - **Mentais**: Inteligência 3, Raciocínio 3, Perseverança 2  
 
-### Habilidades (distribuição inicial, com foco em suas características)
+## Habilidades
 - **Talentos**: Liderança 2, Persuasão 3 (Ventriloquismo), Intimidação 1, Subterfúgio 2  
 - **Perícias**: Tecnologia 2 (Sistemas de Segurança), Investigação 1, Armas Brancas 1  
 - **Conhecimentos**: Acadêmicos 2 (História da Arte), Política 2, Ocultismo 1, Finanças 1  
 
-### Disciplinas (nível inicial, com 3 pontos distribuídos)
+## Disciplinas
 - **Dominação** 2 (Comandar, Mesmerizar)  
 - **Presença** 1 (Awe)  
 
-### Vantagens (reduzidas para refletir um personagem menos experiente)
-- **Recursos** 2 (Pequenos investimentos iniciais, incluindo uma startup de segurança).  
+## Vantagens
+- **Recursos** 2 (Pequenos investimentos iniciais, incluindo a startup *Securis Tech*).  
 - **Contatos** 1 (Um político local e um engenheiro).  
 - **Status** 1 (Reconhecido como um jovem promissor na Camarilla, mas sem grande influência).  
 - **Rebanho** 1 (Duas mulheres góticas devotas, vivendo em sua casa segura).  
 - **Sósia** (Mérito personalizado, 2 pontos): Uma cira transfigurada com sua aparência exata (exceto pelos olhos verdes), usada como isca ou para despistar inimigos.  
 
-### Defeitos
+## Defeitos
 - **Paranoia** (Traumas de confiança o fazem evitar vampiros desconhecidos).  
-- **Segredo Sombrio** (Manipulou um funcionário público em 2005 para facilitar a abertura de sua startup, sem autorização da Camarilla).  
+- **Segredo Sombrio** (Manipulou um funcionário público em 2005 para facilitar a abertura de *Securis Tech*, sem autorização da Camarilla).  
 - **Inimigos** (Um caçador amador que suspeita de suas atividades).  
 
 **Humanidade**: 7 (Ainda mantém um código ético, mas o uso de Dominação começa a pesar).  
@@ -48,97 +46,94 @@
 
 ## Background Expandido
 
-### Origens e Abraço
-Nascido em 1750, em Veneza, Rovaris di Lázaro cresceu em uma família de acadêmicos que valorizava arte e retórica. Sua habilidade de manipular multidões com palavras chamou a atenção durante a Revolução Francesa, em 1789, quando persuadiu uma turba a recuar sem violência. Esse evento atraiu Marco di Verrocchio, um ancião Ventrue, que o Abraçou como um peão para a Jyhad. Inicialmente resistente, Rovaris logo viu na imortalidade uma chance de moldar o mundo segundo sua visão, começando a desenvolver sua arte do ventriloquismo como ferramenta de influência.
+### Origens, Abraço e Longo Torpor
+Nascido em 1750, em Veneza, Rovaris di Lázaro cresceu em uma família de acadêmicos que valorizava arte e retórica. Sua habilidade de manipular multidões com palavras destacou-se durante a Revolução Francesa, em 1789, quando persuadiu uma turba a recuar sem violência. Esse evento atraiu Marco di Verrocchio, um ancião Ventrue, que o Abraçou como um peão para a Jyhad. Inicially resistente, Rovaris viu na imortalidade uma chance de moldar o mundo, desenvolvendo seu ventriloquismo como ferramenta de influência.
 
-Nos dois séculos seguintes, Rovaris evitou grandes conflitos, focando em aprender as intrigas da Camarilla e construir uma base modesta de poder. Traições românticas com vampiras no passado o tornaram paranoico, levando-o a confiar apenas em poucos aliados e em sua sósia, uma cira transfigurada para despistar inimigos. Ele ainda não é uma figura proeminente, mas sua inteligência e carisma o colocam como um vampiro promissor na hierarquia da Camarilla.
+Após o Abraço, Rovaris enfrentou traições românticas com vampiras, que minaram sua confiança e o levaram a um estado de paranoia. Em 1810, temendo ser usado como peão em conflitos da Camarilla, ele entrou voluntariamente em torpor, escondido em um porão fortificado em Veneza. Ele permaneceu em torpor por quase 150 anos, despertando em 1955 com memórias fragmentadas e uma desconfiança ainda maior. Durante esse período, Marco di Verrocchio monitorou seu refúgio, garantindo sua sobrevivência, mas sem interferir. De 1955 a 2005, Rovaris viajou pela Europa, aprendendo sobre a Camarilla moderna e reconstruindo sua base de poder discretamente, antes de se estabelecer em Chicago.
 
-### Chegada a Chicago
-Em 2005, Rovaris chegou a Chicago, atraído por rumores de oportunidades em uma cidade em tensão. Ele fundou uma pequena startup de segurança, a *Securis Tech*, que oferece sistemas de monitoramento básicos, mas promissores. Sua casa segura, adquirida com economias, é equipada com câmeras simples e trancas reforçadas, refletindo sua paranoia e conhecimento inicial em tecnologia. O roubo do *Anjo Caído* ocorreu em 2008, quando ele substituiu a obra por uma cópia e guardou a original em sua casa, um símbolo de sua ambição e habilidade de manipulação.
+### Chegada a Chicago e *Securis Tech*
+Em 2005, Rovaris chegou a Chicago, atraído por rumores de oportunidades em uma cidade em tensão. Ele fundou a *Securis Tech*, uma startup de segurança que oferece sistemas de monitoramento básicos, refletindo sua paranoia e conhecimento em tecnologia. Sua casa segura, equipada com câmeras simples e trancas reforçadas, abriga o *Anjo Caído*, uma pintura roubada em 2008 e substituída por uma cópia, simbolizando sua ambição. Em 2010, a Camarilla o enviou a Chicago como mediador júnior, apaziguando conflitos entre a seita, Anarquistas e o Sabá. Ele sonha em reformar a Camarilla e negociar com magos, mas sua inexperiência o deixa vulnerável.
 
-Em 2010, Rovaris foi enviado pela Camarilla para Chicago como parte de uma missão menor, ajudando a apaziguar conflitos entre a seita, Anarquistas e o Sabá. Ele atua como um mediador júnior, usando sua persuasão para manter a Máscara, mas sonha em reformar a Camarilla e negociar com magos. Sua influência é limitada, e ele depende de sua sósia e rebanho para proteção e sustento.
+### Relação com Jonathan Jovi
+Rovaris e Jonathan Jovi compartilham uma relação de respeito profissional, forjada por interesses mútuos e um encontro crítico em 2010. Rovaris conheceu Jonathan durante uma operação da Camarilla para encobrir uma quebra da Máscara causada por um vampiro do Sabá. Jonathan, com sua influência na polícia, manipulou relatórios, enquanto Rovaris usou Dominação para apagar memórias de testemunhas. Essa colaboração criou um entendimento mútuo: Rovaris admira a eficiência tática de Jonathan, enquanto Jonathan valoriza a discrição de Rovaris.
+
+- **Fatores Determinísticos**: Em 2010, durante uma emboscada nos túneis subterrâneos de Chicago, Rovaris e Jonathan foram encurralados por Brujahs do Sabá. A claustrofobia de Jonathan quase o incapacitou, mas Rovaris usou sua sósia para distrair os inimigos e sua voz ventríloqua para simular reforços, permitindo que escapassem. Essa experiência solidificou a confiança mútua, com Rovaris prometendo nunca expor Jonathan a espaços confinados novamente.
+- **Natureza da Relação**: A relação é prática, com encontros em locais abertos (como parques) para acomodar a claustrofobia de Jonathan. Rovaris contratou Jonathan para instalar sistemas de segurança adicionais em sua casa segura, enquanto Jonathan usa a *Securis Tech* para monitorar delegacias corruptas. Eles trocam informações sobre Klaus Mikaelson, com quem ambos têm laços antigos, mas discordam sobre como lidar com ele — Rovaris prefere manipulação, Jonathan considera traição.
+- **Conflito Potencial**: A ambição de Jonathan de se tornar o “xerife oculto” pode colidir com os planos de Rovaris para reformar a Camarilla. Se Jonathan descobrir o segredo do *Anjo Caído*, ele pode usá-lo para pressionar Rovaris, testando sua aliança.
+
+### Relação com Asmodeus Draven
+A amizade entre Rovaris e Asmodeus Draven é uma mistura de respeito, interesses compartilhados e uma conexão forjada em perigo. Apesar das diferenças — Rovaris, calculista e diplomático, versus Asmodeus, impulsivo e rebelde —, eles encontraram um terreno comum em suas ambições e na luta pela sobrevivência em Chicago.
+
+- **Fatores Determinísticos**: Em 2009, Rovaris contratou o *Draven Sounds* para um evento cultural, impressionado pelo carisma de Asmodeus. O verdadeiro laço se formou na armadilha dos esgotos em 2010, quando foram cercados por Brujahs do Sabá. Asmodeus usou Rapidez para distrair os inimigos, enquanto Rovaris projetou vozes com ventriloquismo para confundi-los, escapando antes do resgate de Klaus Mikaelson. Essa experiência de quase-morte criou uma confiança mútua, reforçada pela paranoia compartilhada de ambos (Rovaris por traições passadas, Asmodeus por Cassandra Velmont).
+- **Natureza da Amizade**: A amizade é marcada por provocações leves — Asmodeus chama Rovaris de “velho certinho”, enquanto Rovaris brinca que Asmodeus é “um artista sem freio”. Rovaris instalou câmeras da *Securis Tech* no estúdio de Asmodeus, enquanto Asmodeus salvou Rovaris de um interrogatório da Camarilla com um show improvisado do *Beatpella*. Eles se encontram em bares neutros para trocar informações sobre o Sabá e Klaus.
+- **Conflito Potencial**: A rebeldia de Asmodeus pode atrair problemas que ameacem os planos discretos de Rovaris. Se Asmodeus descobrir o *Anjo Caído*, ele pode hesitar entre usá-lo contra Rovaris ou protegê-lo por lealdade. Rovaris teme que a inimizade de Asmodeus com Cassandra Velmont exponha sua própria rede.
 
 ### Motivações e Conflitos Internos
-Rovaris deseja reformar a Camarilla, substituindo sua rigidez por um sistema mais flexível, onde ele possa liderar. Ele acredita que a seita precisa se adaptar a ameaças modernas e vê um tratado com magos como uma forma de ganhar aliados poderosos. No entanto, sua falta de experiência o deixa vulnerável, e ele depende muito de diplomacia, o que falha contra inimigos como o Sabá. Seu segredo sombrio — a manipulação de um funcionário público em 2005 — pode prejudicá-lo se descoberto, e ele luta para equilibrar sua ambição com a necessidade de se manter discreto.
-
-### Relação com a Guerra em Chicago
-A guerra em Chicago é uma chance para Rovaris provar seu valor, mas também um risco. Como mediador júnior, ele tenta apaziguar conflitos menores, mas planeja usar o caos para ganhar a confiança de vampiros mais poderosos. A armadilha nos esgotos, onde foi cercado por Brujahs do Sabá, reforça sua paranoia, enquanto o resgate pelo “Pacificador Denominador” o coloca em uma posição delicada, forçando-o a considerar alianças arriscadas.
-
----
+Rovaris deseja reformar a Camarilla, substituindo sua rigidez por um sistema mais flexível, onde ele possa liderar. Ele vê um tratado com magos como uma forma de ganhar aliados, mas sua inexperiência e paranoia o tornam cauteloso. Seu segredo sombrio (a manipulação de 2005) e o roubo do *Anjo Caído* podem destruí-lo se descobertos. A guerra em Chicago é uma oportunidade para provar seu valor, mas também um risco, especialmente após a armadilha nos esgotos e o resgate pelo “Pacificador Denominador” (Klaus).
 
 ## Plano Objetivo para Alcançar os Objetivos
 
 ### Objetivo 1: Tornar-se uma Figura Influente na Camarilla
 - **Passo 1: Ganhar Reconhecimento Local**  
-  Rovaris deve se destacar em missões menores da Camarilla, como mediar disputas ou proteger a Máscara. Ele pode oferecer os serviços de sua startup para monitorar áreas sensíveis.  
-  - **Ação**: Participar de reuniões da Camarilla, usando Persuasão e ventriloquismo para impressionar superiores.  
-  - **Risco**: Vampiros mais experientes podem vê-lo como uma ameaça e tentar sabotá-lo.  
-
+  Destacar-se em missões menores, como mediar disputas ou proteger a Máscara, oferecendo os serviços da *Securis Tech*.  
+  - **Ação**: Usar Persuasão e ventriloquismo em reuniões da Camarilla para impressionar superiores.  
+  - **Risco**: Vampiros mais velhos podem sabotá-lo, vendo-o como uma ameaça.  
 - **Passo 2: Construir Alianças**  
-  Rovaris deve formar laços com outros vampiros jovens e contatos humanos, como políticos locais, para aumentar sua influência.  
-  - **Ação**: Usar sua sósia para negociar em seu lugar, mantendo-se protegido.  
-  - **Risco**: Sua paranoia pode afastar potenciais aliados.  
-
+  Formar laços com vampiros jovens, como Jonathan e Asmodeus, e contatos humanos, como políticos.  
+  - **Ação**: Enviar sua sósia para negociar, mantendo-se protegido.  
+  - **Risco**: Sua paranoia pode afastar aliados.  
 - **Passo 3: Propor Pequenas Reformas**  
-  Após ganhar confiança, Rovaris pode sugerir mudanças modestas na Camarilla local, como melhorar a comunicação entre membros.  
-  - **Ação**: Preparar um discurso convincente, apoiado por Presença, em uma reunião menor.  
-  - **Risco**: Anciões podem rejeitar suas ideias, limitando seu progresso.  
+  Sugerir mudanças modestas na Camarilla local, como melhorar a comunicação.  
+  - **Ação**: Preparar um discurso com Presença em uma reunião menor.  
+  - **Risco**: Anciões podem rejeitar suas ideias.  
 
 ### Objetivo 2: Iniciar Contatos com Magos
 - **Passo 1: Identificar Magos Locais**  
-  Rovaris deve investigar rumores sobre magos em Chicago, usando seu conhecimento de Ocultismo para encontrar pistas.  
-  - **Ação**: Enviar sua sósia para explorar locais místicos, como livrarias esotéricas.  
-  - **Risco**: Magos podem ser hostis ou perceber sua natureza vampírica.  
-
+  Investigar rumores sobre magos em Chicago, usando Ocultismo.  
+  - **Ação**: Enviar sua sósia para livrarias esotéricas, com apoio do *Beatpella* de Asmodeus.  
+  - **Risco**: Magos podem perceber sua natureza vampírica.  
 - **Passo 2: Estabelecer Primeiro Contato**  
-  Rovaris deve oferecer um benefício pequeno, como proteção contra caçadores, em troca de informações sobre magos.  
-  - **Ação**: Usar Persuasão para iniciar uma conversa amigável, evitando revelar sua verdadeira intenção.  
-  - **Risco**: A Camarilla pode descobrir e puni-lo por contatar outros sobrenaturais.  
-
+  Oferecer proteção contra caçadores em troca de informações.  
+  - **Ação**: Usar Persuasão para iniciar uma conversa amigável, apoiado por Jonathan para encobrir rastros.  
+  - **Risco**: A Camarilla pode puni-lo por contatar sobrenaturais.  
 - **Passo 3: Planejar um Tratado Futuro**  
-  Após estabelecer confiança, Rovaris deve começar a planejar um tratado informal, propondo trocas de favores.  
-  - **Ação**: Anotar informações sobre magos em um diário criptografado, mantido em sua casa segura.  
-  - **Risco**: Se o diário for descoberto, ele pode ser acusado de traição.  
+  Propor trocas de favores com magos, anotando informações em um diário criptografado.  
+  - **Ação**: Guardar o diário na casa segura, protegido pela *Securis Tech*.  
+  - **Risco**: Se descoberto, pode ser acusado de traição.  
 
 ### Objetivo 3: Proteger o *Anjo Caído* e Manter a Máscara
 - **Passo 1: Melhorar a Segurança da Casa**  
-  Rovaris deve investir em melhores câmeras e alarmes para proteger o *Anjo Caído* e seu rebanho.  
-  - **Ação**: Usar os lucros da *Securis Tech* para contratar um técnico de confiança.  
-  - **Risco**: Caçadores podem rastrear suas compras até ele.  
-
+  Investir em melhores câmeras e alarmes para proteger a pintura e o rebanho.  
+  - **Ação**: Usar lucros da *Securis Tech* e a expertise de Jonathan para contratar um técnico.  
+  - **Risco**: Caçadores podem rastrear suas compras.  
 - **Passo 2: Evitar Suspeitas**  
-  Para despistar caçadores, Rovaris deve espalhar rumores de que o *Anjo Caído* foi vendido a um colecionador estrangeiro.  
-  - **Ação**: Usar sua sósia para aparecer em eventos culturais, sugerindo que ele está “vendendo” a pintura.  
-  - **Risco**: Um erro pode revelar a existência da sósia.  
-
+  Espalhar rumores de que o *Anjo Caído* foi vendido a um colecionador estrangeiro.  
+  - **Ação**: Usar a sósia em eventos culturais, com Asmodeus organizando shows para desviar atenção.  
+  - **Risco**: A sósia pode ser exposta.  
 - **Passo 3: Manter o Rebanho Leal**  
-  Rovaris deve reforçar a devoção de seu pequeno rebanho com gestos de carinho e rituais góticos simples.  
-  - **Ação**: Organizar noites de poesia em sua casa, usando Presença para fortalecer laços.  
-  - **Risco**: Uma integrante pode ser influenciada por inimigos, como Anarquistas.  
-
----
+  Reforçar a devoção do rebanho com rituais góticos.  
+  - **Ação**: Organizar noites de poesia com Presença, com música de Asmodeus.  
+  - **Risco**: Anarquistas podem influenciar o rebanho.  
 
 ## Integração com a História e Sugestões Narrativas
 
 ### Contexto em Chicago, 2010
-A guerra em Chicago é um desafio para Rovaris, que ainda está provando seu valor na Camarilla. Como mediador júnior, ele lida com tarefas menores, como negociar tréguas em conflitos locais. A armadilha nos esgotos, onde foi cercado por Brujahs do Sabá, destaca sua vulnerabilidade, enquanto o resgate pelo “Pacificador Denominador” cria uma dívida que ele planeja usar para ganhar aliados.
+Rovaris é um mediador júnior na guerra de Chicago, lidando com conflitos menores enquanto planeja sua ascensão. A armadilha nos esgotos, onde escapou com Asmodeus e Jonathan, reforça sua paranoia, e o resgate por Klaus o coloca em uma posição delicada. Sua longa ausência em torpor explica sua inexperiência, apesar da idade.
 
 ### Interação com Klaus Mikaelson
-Rovaris vê Klaus como uma figura perigosa, mas uma possível ferramenta contra o Sabá. Ele pode tentar uma abordagem cautelosa, oferecendo informações menores sobre a Camarilla em troca de proteção. Sua inexperiência o torna hesitante, e ele usará sua sósia para evitar confrontos diretos.  
-- **Cena Sugerida**: Rovaris envia sua sósia para entregar uma mensagem a Klaus em um bar neutro, propondo uma troca de favores. Ele usa ventriloquismo para projetar sua voz, mantendo Klaus confuso sobre sua localização.
+Rovaris vê Klaus como uma ferramenta contra o Sabá, mas teme sua manipulação. Ele usa sua sósia para negociar, mantendo distância.  
+- **Cena Sugerida**: Rovaris envia sua sósia a um bar neutro para propor uma troca de favores a Klaus, usando ventriloquismo para projetar sua voz. Jonathan e Asmodeus monitoram o encontro, prontos para intervir.
 
 ### Sugestões para o Mestre
-1. **Conflito Interno**: Um vampiro mais velho da Camarilla desconfia das ambições de Rovaris e o pressiona a revelar seu segredo sombrio. O grupo deve ajudá-lo a desviar a suspeita.  
-2. **Caçadores**: Um caçador amador segue Rovaris até sua casa segura, suspeitando do roubo do *Anjo Caído*. O grupo deve protegê-lo sem quebrar a Máscara.  
-3. **Magos**: Rovaris encontra um mago novato que sabe sobre vampiros, oferecendo uma aliança frágil. Isso pode ser uma armadilha ou o início de seu tratado.  
-4. **Sósia em Risco**: Anarquistas capturam a sósia de Rovaris, pensando que é ele. O grupo deve resgatá-la antes que sua existência seja exposta.
+1. **Conflito Interno**: Um ancião suspeita do segredo do *Anjo Caído* e pressiona Rovaris. Jonathan e Asmodeus ajudam a desviar a suspeita.  
+2. **Caçadores**: Um caçador rastreia a *Securis Tech*, forçando Rovaris a proteger sua casa com apoio de Jonathan.  
+3. **Magos**: Rovaris encontra um mago que oferece uma aliança. Asmodeus avalia o risco com o *Beatpella*.  
+4. **Sósia em Risco**: Anarquistas capturam a sósia, e Jonathan usa Obtenebra para resgatá-la.
 
 ### Ganchos Narrativos
-- O Pacificador Denominador exige que Rovaris revele a localização do *Anjo Caído* como pagamento pelo resgate. Como ele responde?  
-- Uma integrante do rebanho é abordada por um Anarquista, ameaçando revelar segredos de Rovaris.  
-- Um ancião da Camarilla descobre que Rovaris investigou magos e o ameaça com punição.
-
----
+- Klaus exige que Rovaris revele informações sobre Jonathan, testando sua lealdade.  
+- Asmodeus descobre o *Anjo Caído* e hesita entre usá-lo ou proteger Rovaris.  
+- O diário de Rovaris sobre magos é roubado, forçando-o a pedir ajuda a seus aliados.
 
 ## Considerações Finais
-Rovaris di Lázaro, mesmo em um estágio inicial, mantém sua sofisticação, paranoia e ambição, adaptadas para uma mesa de nível 1. Sua trajetória como ventriloquista e diplomata cria espaço para intrigas e manipulações, enquanto sua inexperiência adiciona vulnerabilidade. O plano objetivo reflete suas ambições em escala reduzida, e os riscos garantem desafios narrativos. Rovaris é um aliado valioso, mas suas ações podem complicar a dinâmica do grupo, dependendo de como lidarem com sua ascensão.
+Rovaris di Lázaro, com sua sofisticação e paranoia, é um Ventrue promissor, apesar de sua inexperiência devido ao longo torpor. Suas relações com Jonathan e Asmodeus, baseadas em confiança forjada em perigo, criam uma dinâmica rica. A ficha mantém o equilíbrio de um personagem inicial, com ganchos narrativos que integram a crônica de Chicago em 2010.
